@@ -17,10 +17,8 @@ const SITE = {
   intro: "I'm a computer science student who makes games. Here's what I've built so far.",
 
   email: "",   // e.g. "you@example.com" (adds an "Email me" button)
-  resume: "",  // e.g. "resume.pdf" (put the PDF next to index.html)
+  resume: "Zach_van_Ryn_Resume.pdf",  // the PDF next to index.html
 
-  // Buttons in the top section and the contact section.
-  // Add more like: { label: "itch.io", url: "https://zachvanryn.itch.io" },
   links: [
     { label: "GitHub", url: "https://github.com/zachvanryn" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/zachary-van-ryn-899846249/" },
@@ -97,7 +95,7 @@ const SITE = {
         conversations reveal what the facility is really for. Built in Unity
         with William Pile for CTIN 489: Intermediate Game Design and Production.
       `,
-      // What did YOU build? List the parts that were yours, and be specific.
+      // List parts, be specific.
       // Systems visible in the footage: click-to-command scientists (select,
       // then click a reachable tile), keycard doors, picking up / putting down
       // items (E), dialogue boxes with character portraits, savepoint reset
