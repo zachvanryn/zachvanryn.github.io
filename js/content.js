@@ -79,8 +79,8 @@ const SITE = {
       code: "",
       // Files attached to the latest release at github.com/zachvanryn/eagles-nest
       downloads: [
-        { label: "Download for Mac", url: "https://github.com/zachvanryn/eagles-nest/releases/latest/download/EaglesNest-Mac.zip" },
-        { label: "Download for Windows", url: "https://github.com/zachvanryn/eagles-nest/releases/latest/download/EaglesNest-Windows.zip" },
+        { label: "Download for Mac", url: "https://github.com/zachvanryn/eagles-nest/releases/latest/download/EaglesNest.Final.Build.zip" },
+        { label: "Download for Windows", url: "https://github.com/zachvanryn/eagles-nest/releases/latest/download/EaglesNest-FinalBuild-Windows.zip" },
       ],
       links: [
         { label: "Install instructions", url: "https://github.com/zachvanryn/eagles-nest/releases/latest" },
