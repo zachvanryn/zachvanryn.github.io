@@ -3,28 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zach van Ryn | Game Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 16px;
-      min-height: 100vh;
-      box-sizing: border-box;
-      display: grid;
-      place-items: center;
-      background: #0b0d12;
-      color: #e9ecf3;
-      font-family: system-ui, sans-serif;
-      text-align: center;
-    }
-    h1 { margin: 0 0 8px; font-size: 3rem; }
-    p { margin: 0; color: #8a93a8; }
-  </style>
+
+  <!-- Shown in Google results and link previews. main.js also sets
+       the browser-tab title from your name in content.js. -->
+  <title>Game Portfolio</title>
+  <meta name="description" content="Games and projects by Zach van Ryn, computer science student.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='3' y='3' width='10' height='10' fill='%238bf5a8'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/theme.css">  <!-- colors + fonts -->
+  <link rel="stylesheet" href="css/style.css">  <!-- layout -->
 </head>
 <body>
+
+  <!-- ===== Top bar ===== -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="#top"><span class="pixel" aria-hidden="true"></span><span id="brand"></span></a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Zach van Ryn</h1>
-    <p>Game portfolio coming soon.</p>
+    <!-- ===== Hero: the empty id="..." spots are filled in from content.js ===== -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="kicker"><span class="kicker__prompt">&gt;</span> <span id="role"></span><span class="caret" aria-hidden="true"></span></p>
+        <h1 id="name"></h1>
+        <p class="hero__intro" id="intro"></p>
+        <div class="actions" id="hero-actions"></div>
+        <p class="stats" id="stats"></p>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section wrap" id="projects">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--num">Projects</p>
+        <h2>Things I've made</h2>
+      </header>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by tag"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section wrap" id="about">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--num">About</p>
+        <h2>About me</h2>
+      </header>
+      <div class="about__grid">
+        <div class="prose about__text" id="about-text"></div>
+        <div class="skills" id="skills"></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section wrap" id="contact">
+      <div class="contact">
+        <p class="eyebrow eyebrow--num">Contact</p>
+        <h2>Say hello</h2>
+        <p class="contact__note" id="contact-note"></p>
+        <div class="actions" id="contact-actions"></div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer wrap">
+    <p id="footer-text"></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- Project details popup (filled in when you click a card) -->
+  <dialog class="modal" id="modal" aria-labelledby="modal-title"></dialog>
+
+  <script src="js/content.js"></script>     <!-- your words + projects -->
+  <script src="js/main.js"></script>        <!-- builds the page -->
+  <script src="js/customizer.js"></script>  <!-- theme editor, only with ?customize -->
 </body>
 </html>

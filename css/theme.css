@@ -1,0 +1,32 @@
+/* ================================================================
+   theme.css: your design tokens (colors, fonts, roundness).
+   Every color and font on the site comes from these variables,
+   so changing one value here restyles the whole page.
+
+   Easiest way to change it:
+     1. Open the site with ?customize on the end of the address
+        (e.g. index.html?customize) and play with the panel.
+     2. Click "Download theme.css" and replace this file with it.
+
+   Coming from Figma? Select a layer, copy the hex code from its
+   Fill (e.g. #7C5CFF) and paste it as a value below.
+   ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --bg: #0b0d12;          /* page background */
+  --surface: #131722;     /* cards, panels */
+  --border: #242a3a;      /* outlines */
+  --text: #e9ecf3;        /* main text */
+  --muted: #8a93a8;       /* secondary text */
+  --accent: #8bf5a8;      /* buttons, highlights */
+  --on-accent: #0b0d12;   /* text on top of the accent color */
+  --accent-2: #8b7bff;    /* glows, default cover art */
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius: 14px;         /* corner roundness: 0 = sharp, 24px = very round */
+}
