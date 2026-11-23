@@ -78,10 +78,10 @@
       `<span class="art__glyph" aria-hidden="true">${esc(letters)}</span></div>`;
   }
 
-  // Your links (+ résumé) as buttons. Used in the hero and contact sections.
+  // Your links (+ resume) as buttons. Used in the hero and contact sections.
   function linkButtons() {
     const links = [...(SITE.links || [])];
-    if (SITE.resume) links.push({ label: "Résumé", url: SITE.resume, newTab: true });
+    if (SITE.resume) links.push({ label: "Resume", url: SITE.resume, newTab: true });
     return links.map((l) => `<a class="btn"${href(l.url, l.newTab)}>${esc(l.label)}</a>`).join("");
   }
 
