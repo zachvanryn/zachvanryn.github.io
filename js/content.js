@@ -17,7 +17,7 @@ const SITE = {
   intro: "I'm a computer science student who makes games. Here's what I've built so far.",
 
   email: "",   // e.g. "you@example.com" (adds an "Email me" button)
-  resume: "Zach_van_Ryn_Resume.pdf",  // the PDF next to index.html
+  resume: "Zach_van_Ryn_Resume.pdf?v=2026-11-25",  // change the date after replacing the PDF so browsers load the new one
 
   links: [
     { label: "GitHub", url: "https://github.com/zachvanryn" },
